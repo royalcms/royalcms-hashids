@@ -2,7 +2,12 @@
     "name": "royalcms/hashids",
     "description": "Royalcms package for Hashids",
     "keywords": ["royalcms", "hash", "hashid", "encode", "decode"],
-	"license": "MIT",
+    "license": "MIT",
+    "homepage": "http://royalcms.cn",
+    "support": {
+        "issues": "https://github.com/royalcms/framework/issues",
+        "source": "https://github.com/royalcms/framework"
+    },
     "authors": [
         {
             "name": "Royal Wang",
@@ -11,12 +16,17 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "royalcms/support": "~4.0",
         "hashids/hashids": "1.0.6"
     },
     "autoload": {
-        "psr-0": {
-          "Royalcms\\Component\\Hashids\\": ""
+        "psr-4": {
+            "Royalcms\\Component\\Hashids\\": "Royalcms/Component/Hashids"
         }
-    }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "5.0-dev"
+        }
+    },
+    "minimum-stability": "dev"
 }
